@@ -27,7 +27,7 @@ namespace ApiIsolated
             {
                 Date = DateTime.Now.AddDays(index),
                 TemperatureC = temp = randomNumber.Next(-20, 55),
-                Summary = GetSummary(temp)
+                Summary = "Azure F(x) "+GetSummary(temp)
             }).ToArray();
 
             var response = req.CreateResponse(HttpStatusCode.OK);
